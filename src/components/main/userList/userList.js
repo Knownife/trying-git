@@ -1,14 +1,13 @@
 
 
-function UserList() {
-    let userBuyList = [{id: 1, name: 'Apple', price: 5}, {id: 2, name: 'Orange juice', price: 20}, {
-        id: 3,
-        name: 'Xbox',
-        price: 250
-    }]
+function UserList(props) {
+
+    let userBuyList = props.userList;
+    let categoryList = props.category;
+
     let listItem = userBuyList.map(item => <li key={item.id}>{item.name}: {item.price}$</li>)
 
-    return <div>{listItem}</div>
+    return <div><h3>{categoryList}</h3>{listItem}</div>
 }
 
 export default UserList;
