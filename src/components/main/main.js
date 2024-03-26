@@ -2,14 +2,14 @@ import React from 'react';
 
 import './index.css'
 
-import ShowLogo from './showLogo/index'
+import ChangeName from "./changeName";
 
 function Main(){
 
 
 
     return <div >
-        <ShowLogo />
+        <ChangeName />
     </div>
 
 }
