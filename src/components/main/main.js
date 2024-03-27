@@ -2,14 +2,14 @@ import React from 'react';
 
 import './index.css'
 
-import ChangeName from "./changeName";
+import ChangeNameByEnter from "./changeNameByEnter/index";
 
 function Main(){
 
 
 
     return <div >
-        <ChangeName />
+        <ChangeNameByEnter />
     </div>
 
 }
